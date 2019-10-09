@@ -5,7 +5,6 @@ module.exports = function(app){
         app.visits.push(req.body);
 
         var visitId = app.visits.length;
-        console.log('Stored visit count: ' + visitId);
 
         res.status(201).json({'id':visitId});
     });
