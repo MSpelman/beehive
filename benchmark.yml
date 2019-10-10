@@ -8,4 +8,6 @@ scenarios:
     flow:
       - post:
           url: "/api/visits"
-          body: '{"beeId":"100","timestamp":"Tue Nov 01 2016 09:11:51 GMT-0500 (CDT)","pollen":"10"}'
+          json:
+            beeId: 100
+            pollen: 10
