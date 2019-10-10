@@ -8,7 +8,6 @@ module.exports = function(app){
         const newVisit = new Visit(req.body);
         newVisit.save((err) => {
             if (err) {
-                console.log(err.message)
                 return res.status(400).send({
                     message: err.message
                 })

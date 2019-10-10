@@ -2,7 +2,7 @@ config:
   target: http://localhost:3000
   phases:
     - duration: 60
-      arrivalRate: 300
+      arrivalRate: 500
 scenarios:
   - name: "Visits"
     flow:
